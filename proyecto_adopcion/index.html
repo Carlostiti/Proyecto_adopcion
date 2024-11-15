@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Administración - Adopción Responsable</title>
-    <link rel="stylesheet" href="C:\Users\camim\Documents\proyecto_adopcion\estilo.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header class="top-header">
@@ -45,18 +45,37 @@
         <section class="module-card" id="usuarios">
             <h2>Gestión de Usuarios</h2>
             <div class="card-content">
+
+                 <form id="form-cuestionario">
+                    
+                        <label for="userName">Nombre del Usuario:</label>
+                        <input type="text" id="userName" name="userName" required>
+            
+                        <label for="userEmail">Correo Electrónico:</label>
+                        <input type="email" id="userEmail" name="userEmail" required>
+            
+                        <label for="userRole">Rol:</label>
+                        <select id="userRole" name="userRole" required>
+                            <option value="">Seleccione un rol</option>
+                            <option value="admin">Administrador</option>
+                            <option value="editor">Editor</option>
+                            <option value="viewer">Visor</option>
+                        </select>
                 <button class="action-button">Crear Usuario</button>
             </div>
         </section>
 
         <section class="module-card" id="cuestionarios">
             <h2>Cuestionarios de Evaluación</h2>
+
+
+
             <div class="card-content">
                 <button class="action-button">Crear Cuestionario</button>
             </div>
         </section>
     </main>
 
-    <script src="C:\Users\camim\Documents\proyecto_adopcion\script.js"></script>
+    <script src=script.js></script>
 </body>
 </html>
